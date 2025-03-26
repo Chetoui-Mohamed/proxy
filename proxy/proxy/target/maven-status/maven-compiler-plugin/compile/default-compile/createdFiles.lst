@@ -1,0 +1,16 @@
+com\example\webdriverproxy\filter\InitSessionFilter.class
+com\example\webdriverproxy\filter\CacheRequestBodyRewrite.class
+com\example\webdriverproxy\model\SessionDto.class
+com\example\webdriverproxy\ProxyApplication.class
+com\example\webdriverproxy\filter\CacheResponseBodyRewrite.class
+com\example\webdriverproxy\filter\ErrorDetectionFilter$Config.class
+com\example\webdriverproxy\model\SessionContext.class
+com\example\webdriverproxy\service\FilterService.class
+com\example\webdriverproxy\service\SessionContextService.class
+com\example\webdriverproxy\filter\CommandLoggingFilter$Config.class
+com\example\webdriverproxy\command\ProxyCommandExecutor.class
+com\example\webdriverproxy\filter\CommandLoggingFilter.class
+com\example\webdriverproxy\config\ProxyConfig.class
+com\example\webdriverproxy\filter\ErrorDetectionFilter.class
+com\example\webdriverproxy\filter\InitSessionFilter$Config.class
+com\example\webdriverproxy\mapper\JsonMapper.class

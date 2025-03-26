@@ -1,0 +1,29 @@
+server:
+  port: 8086
+
+proxy:
+  selenium:
+    url: http://localhost:4444/wd/hub
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: selenium_session
+          uri: ${proxy.selenium.url}
+          predicates:
+            - Path=/wd/hub/session/**
+        - id: status_route
+          uri: ${proxy.selenium.url}/../
+          predicates:
+            - Path=/wd/hub/status
+        - id: fallback_route
+          uri: ${proxy.selenium.url}
+          predicates:
+            - Path=/wd/hub/**
+
+logging:
+  level:
+    ROOT: INFO
+    com.example.webdriverproxy: DEBUG
+    org.springframework.cloud.gateway: DEBUG
